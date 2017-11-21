@@ -4,9 +4,6 @@ package extra;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -17,7 +14,8 @@ public class ThatWasEasy extends MouseAdapter {
 
 	public void mouseClicked(MouseEvent arg0) {
 		/* Use the speak method to make the button work. */
-		
+		String e = ("that was easy");
+		speak(e);
 	}
 
 	private void speak(String words) {
@@ -50,9 +48,7 @@ public class ThatWasEasy extends MouseAdapter {
 		this.easyButtonImage = new JLabel(icon);
 		quizWindow.add(easyButtonImage);
 		quizWindow.pack();
-		
+
 	}
 
 }
-
-
